@@ -14,5 +14,5 @@ const routes = registerRoutes();
 app.use("/api", routes);
 
 app.listen(port, () => {
-  return console.log(`Express is listening at http://localhost:${port}`);
+  return console.log(`Server is runnning on port ${port}`);
 });

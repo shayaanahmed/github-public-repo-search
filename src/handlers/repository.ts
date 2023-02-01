@@ -2,7 +2,6 @@ import { fetchPublicRepositories } from "../services/github";
 import { Operators } from "../utilities/types";
 
 export const getRepositories = async (req, res) => {
-  console.log(req.body);
   const { sort, perPage = undefined, language = undefined, created } = req.body;
 
   const repositories = await fetchPublicRepositories({

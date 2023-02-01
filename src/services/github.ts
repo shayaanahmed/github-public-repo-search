@@ -10,7 +10,6 @@ import {
 const callGITHUBApi = async (request: GITHUBRequest) => {
   const { params, method, endpoint } = request;
   try {
-    console.log(params);
     const { data } = await axios.request({
       baseURL: "https://api.github.com",
       url: `${endpoint}?${params}`,
